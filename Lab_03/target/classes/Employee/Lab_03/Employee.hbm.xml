@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping>
+    <class name="Employee.Lab_03.Employee" table="employee">
+        <id name="id" type="int" column="e_id">
+            <generator class="increment" />
+        </id>
+        <property name="name">
+            <column name="name" />
+        </property>
+        <property name="salary">
+            <column name="salary" />
+        </property>
+        <property name="phone">
+            <column name="phone" />
+        </property>
+        <property name="addr">
+            <column name="addr" />
+        </property>
+    </class>
+</hibernate-mapping>
